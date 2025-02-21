@@ -1,53 +1,21 @@
-import sys
-from setuptools import setup, find_packages
+from setuptools import setup
 
-name = "auto-title-capture"
-version = "1.0.0"
+APP = ["src/auto_title_capture.py"]
+DATA_FILES = []
+OPTIONS = {
+    "packages": ["watchdog", "pynput"],
+    "plist": {
+        "CFBundleName": "Screen Detector",
+        "CFBundleShortVersionString": "1.0.0",
+        "CFBundleVersion": "1.0.0",
+        "CFBundleIdentifier": "com.yourname.screendetector",
+        "LSUIElement": True,
+    },
+}
 
-# Common setup options
-common_options = dict(
-    name=name,
-    version=version,
-    description="A cross-platform application for capturing titles from screens.",
-    author="Az Muth",
-    author_email="aziyatalik4@gmail.com",
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
-    install_requires=[
-        "watchdog",
-        "pynput",
-    ],
-    python_requires='>=3.6',
+setup(
+    app=APP,
+    data_files=DATA_FILES,
+    options={"py2app": OPTIONS},
+    setup_requires=["py2app"],
 )
-
-if sys.platform == "darwin":
-    # macOS: use py2app to build a native application bundle
-    setup(
-        app=["src/auto_title_capture.py"],
-        setup_requires=["py2app"],
-        options={
-            "py2app": {
-                "argv_emulation": True,
-                "plist": {
-                    "CFBundleName": name,
-                    "CFBundleShortVersionString": version,
-                    "CFBundleVersion": version,
-                    "CFBundleIdentifier": "com.yourname.autotitlecapture",
-                },
-            }
-        },
-        **common_options
-    )
-elif sys.platform == "win32":
-    # Windows: use a console script entry point
-    setup(
-        entry_points={
-            'console_scripts': [
-                'auto-title-capture=auto_title_capture:main',
-            ],
-        },
-        **common_options
-    )
-else:
-    # Fallback for other platforms
-    setup(**common_options)

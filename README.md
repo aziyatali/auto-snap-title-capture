@@ -11,32 +11,27 @@ Auto Title Capture is a cross-platform application designed to capture and manag
 ## Installation
 
 To install the required dependencies, run:
-
 `pip3 install -r requirements.txt`
+
 
 ## Usage
 
 To run the application directly, execute:
-
 `python3 src/auto_title_capture.py`
+
 
 ## Building the Application
 
-This project supports creating standalone application bundles for both macOS and Windows.
+This project now supports creating a standalone application bundle for both macOS and Windows using PyInstaller.
 
-### macOS
+1. Install the build dependency (if not already installed):
+`pip3 install -r requirements.txt`
 
-The project uses `py2app` to build a native macOS application bundle. To create the macOS app, run:
-
-`python3 setup.py py2app`
-
-The built application bundle will be located in the `dist` folder.
-
-### Windows
-
-On Windows, a console script entry point is defined. You can build a standalone executable using [PyInstaller](https://pyinstaller.org/). For example, run:
-
+2. Build the application by running:
 `pyinstaller --onefile --windowed src/auto_title_capture.py`
+
+
+The built application bundle will appear in the `dist` folder.
 
 ## Contributing
 
