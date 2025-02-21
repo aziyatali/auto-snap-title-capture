@@ -1,4 +1,4 @@
-# Auto Title Capture
+# Auto Snap Title Capture
 
 Auto Title Capture is a cross-platform application designed to capture and manage window titles efficiently. This project is built using Python 3 and is intended for users who need to monitor and log window titles for various applications.
 
@@ -18,7 +18,7 @@ To install the required dependencies, run:
 
 To run the application directly, execute:
 
-`python3 auto_title_capture.py`
+`python3 src/auto_title_capture.py`
 
 ## Building the Application
 
@@ -36,7 +36,7 @@ The built application bundle will be located in the `dist` folder.
 
 On Windows, a console script entry point is defined. You can build a standalone executable using [PyInstaller](https://pyinstaller.org/). For example, run:
 
-`pyinstaller --onefile --windowed auto_title_capture.py`
+`pyinstaller --onefile --windowed src/auto_title_capture.py`
 
 ## Contributing
 
