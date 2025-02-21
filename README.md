@@ -37,6 +37,19 @@ The built application bundle will appear in the `dist` folder.
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for suggestions or improvements.
 
+## Screenshots
+
+<div style="display: flex; justify-content: center; gap: 40px;">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <p style="margin: 0; font-weight: bold;">As Is</p>
+    <img src="images/as_is.png" alt="As Is Image" style="height: 250px; margin-top: 10px;" />
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <p style="margin: 0; font-weight: bold;">To Be</p>
+    <img src="images/to_be.png" alt="To Be Image" style="height: 250px; margin-top: 10px;" />
+  </div>
+</div>
+
 ## Acknowledgments
 
 This project was inspired by a post on LinkedIn:
