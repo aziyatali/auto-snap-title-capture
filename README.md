@@ -39,10 +39,16 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 ## Screenshots
 
-<p>
-  <img src="images/as_is.png" alt="As Is Image" width="300" height="200" style="margin-right: 20px;" />
-  <img src="images/to_be.png" alt="To Be Image" width="300" height="200" />
-</p>
+<div style="display: flex; justify-content: center; gap: 40px;">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <p style="margin: 0; font-weight: bold;">As Is</p>
+    <img src="images/as_is.png" alt="As Is Image" style="height: 250px; margin-top: 10px;" />
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <p style="margin: 0; font-weight: bold;">To Be</p>
+    <img src="images/to_be.png" alt="To Be Image" style="height: 250px; margin-top: 10px;" />
+  </div>
+</div>
 
 ## Acknowledgments
 
