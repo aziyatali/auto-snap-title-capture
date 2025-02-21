@@ -37,6 +37,13 @@ The built application bundle will appear in the `dist` folder.
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for suggestions or improvements.
 
+## Screenshots
+
+<p>
+  <img src="images/as_is.png" alt="As Is Image" width="300" height="200" style="margin-right: 20px;" />
+  <img src="images/to_be.png" alt="To Be Image" width="300" height="200" />
+</p>
+
 ## Acknowledgments
 
 This project was inspired by a post on LinkedIn:
