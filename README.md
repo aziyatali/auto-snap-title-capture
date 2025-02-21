@@ -37,6 +37,11 @@ The built application bundle will appear in the `dist` folder.
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for suggestions or improvements.
 
+## Acknowledgments
+
+This project was inspired by a post on LinkedIn:
+[Is there a program that will automatically capture window titles?](https://www.linkedin.com/posts/dangericke_is-there-a-program-that-will-automatically-activity-7297400112937414659-2pwo?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSsjHQBIzh_KO1xQP5DJ08ul0x7C_cYedQ)
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
